@@ -8,7 +8,7 @@ function Navigation() {
     <header className="flex justify-between items-center gap-4 p-4">
       {/* logo */}
       <div>
-        <img src={logo} alt="" width={150} />
+        <img src={logo} alt="" width={100} />
       </div>
 
       {/*  navigtions*/}
@@ -24,11 +24,11 @@ function Navigation() {
       </nav>
 
       <div className="flex justify-between items-center gap-2 ">
-        <Button className="capitalize text-[14px] lg:text-base px-3 py-3 lg:px-6 lg:py-6 font-semibold cursor-pointer bg-transparent text-black ">
+        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 font-semibold cursor-pointer bg-transparent text-black ">
           log in
         </Button>
 
-        <Button className="capitalize text-[14px] lg:text-base px-3 py-3 lg:px-6 lg:py-6 bg-[#10B981] rounded-lg text-white cursor-pointer">
+        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#10B981] rounded-lg text-white cursor-pointer">
           get started
         </Button>
       </div>
