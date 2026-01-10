@@ -1,13 +1,14 @@
 import React from "react";
 import heroImage from "../assets/Group 10.png";
 import { Badge } from "./ui/badge";
-import { Info } from "lucide-react";
+import { Button } from "./ui/button";
+import { Info, MoveRight } from "lucide-react";
 
 const date = new Date().getFullYear();
 
 function Hero() {
   return (
-    <section className="flex flex-col lg:flex-row justify-baseline lg:justify-evenly gap-8 lg:gap-5 mt-8  mb-10 ">
+    <section className="flex flex-col lg:flex-row justify-between lg:justify-evenly gap-8 lg:gap-5 p-2 mt-12 mb-12 ">
       <div className="m-auto w-full lg:max-w-[50%] tracking-tight text-center lg:text-left ">
         <div className="flex justify-center items-center gap-1 mb-4 bg-[#ECFDF5] max-w-30% lg:w-10/25 rounded-xl transition-all hover:translate-y-1 ">
           <span>
@@ -28,13 +29,16 @@ function Hero() {
           clarity.
         </p>
 
-        <button className="capitalize px-4 py-4 lg:px-6 lg:py-4 bg-[#10B981] rounded-lg text-white cursor-pointer">
-          get started
-        </button>
+        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#10B981] rounded-lg text-white cursor-pointer">
+          get started{" "}
+          <span>
+            <MoveRight size={38} />
+          </span>
+        </Button>
       </div>
 
       {/* hero image */}
-      <div className="">
+      <div className="flex items-center">
         <img src={heroImage} alt="hero-image" />
       </div>
     </section>

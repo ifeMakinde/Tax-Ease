@@ -15,9 +15,9 @@ const reformCard = [
     icon: (
       <TriangleAlert
         strokeWidth={1}
-        size={32}
+        size={40}
         color="white"
-        className="bg-[#F59E0B] "
+        className="bg-[#F59E0B] p-2 rounded-md"
       />
     ),
     header: " New SME Thresholds",
@@ -30,9 +30,9 @@ const reformCard = [
     icon: (
       <Globe
         strokeWidth={1}
-        size={32}
+        size={40}
         color="white"
-        className="bg-[#10B981] "
+        className="bg-[#10B981] p-2 rounded-md"
       />
     ),
     header: "Foreign Income Rules",
@@ -45,9 +45,9 @@ const reformCard = [
     icon: (
       <FileSpreadsheet
         strokeWidth={1}
-        size={32}
+        size={40}
         color="white"
-        className="bg-[#3B82F6] "
+        className="bg-[#3B82F6] p-2 rounded-md"
       />
     ),
     header: "VAT & CIT Changes",
@@ -59,11 +59,11 @@ const reformCard = [
 
 function Reform() {
   return (
-    <section>
-      <div className=" text-center mb-8">
-        <h2 className="text-3xl font-semibold">
+    <section className="my-20 p-2">
+      <div className=" text-center max-w-150 m-auto mb-16">
+        <h3 className="text-[26px] lg:text-3xl font-semibold mb-3">
           The 2026 Reform is complex. Compliance shouldn't be.
-        </h2>
+        </h3>
         <p className="text-[14px] lg:text-base">
           Navigate Nigeria's latest tax changes with confidence. We've decoded
           the complexity so you don't have to.
@@ -74,10 +74,10 @@ function Reform() {
         {reformCard.map((card, index) => (
           <Card
             key={index}
-            className="p-3 border-0 rounded-none"
+            className="p-4 border-0 rounded-md"
             style={{ backgroundColor: card.color }}
           >
-            <CardHeader className="p-0">{card.icon}</CardHeader>
+            <CardHeader className="">{card.icon} </CardHeader>
             <CardTitle className="text-[24px] ">{card.header}</CardTitle>
             <CardDescription>{card.paragraph}</CardDescription>
           </Card>
