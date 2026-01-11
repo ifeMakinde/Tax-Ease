@@ -59,7 +59,7 @@ const reformCard = [
 
 function Reform() {
   return (
-    <section className="my-20 p-2">
+    <section className="my-20">
       <div className=" text-center m-auto mb-16">
         <h3 className="text-[26px] lg:text-3xl font-semibold mb-3">
           The 2026 Reform is complex. Compliance shouldn't be.
