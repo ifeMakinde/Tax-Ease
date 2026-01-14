@@ -38,7 +38,7 @@ function TaxpayerComp() {
         </p>
       </div>
 
-      <div className="m-auto max-w-100 lg:max-w-[80%] flex justify-center items-center gap-4 ">
+      <div className="m-auto w-70 lg:max-w-[70%] px-6 flex justify-center items-center gap-2 lg:gap-4 flex-wrap lg:flex-nowrap ">
         {tabs.map((tab) => (
           <Button
             key={tab.title}
@@ -46,7 +46,7 @@ function TaxpayerComp() {
               activeTab === tab.title
                 ? "bg-[#064E3B]"
                 : "text-black bg-gray-100"
-            }  text-[14px] lg:text-base`}
+            }  text-[12px] lg:text-base`}
             onClick={() => {
               setActiveTab(tab.title);
             }}
