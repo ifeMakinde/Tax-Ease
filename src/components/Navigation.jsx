@@ -32,11 +32,7 @@ function Navigation() {
           log in
         </Button>
 
-<<<<<<< HEAD
-        <Button className="capitalize text-[14px] lg:text-base px-3 py-3 lg:px-6 lg:py-6 bg-[#064E3B] rounded-lg text-white cursor-pointer">
-=======
         <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#10B981] rounded-lg text-white cursor-pointer">
->>>>>>> 7e61bfa41481c1b005360c5e3a09b16dd4064a00
           get started
         </Button>
       </div>
