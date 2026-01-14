@@ -10,19 +10,14 @@
 }
 
 body {
-<<<<<<< HEAD
+
   width: 100%;
   min-width: 375px;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-=======
-  margin: 0 auto;
-  max-width: 1400px;
-  min-width: 320px;
-  scroll-behavior : smooth;
-    font-family: "Poppins", sans-serif;
-  /* font-family: Nunito, sans-serif; */
->>>>>>> 7e61bfa41481c1b005360c5e3a09b16dd4064a00
+
+
+
 }
 
 @theme inline {
