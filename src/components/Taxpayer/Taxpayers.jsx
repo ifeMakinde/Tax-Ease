@@ -38,7 +38,7 @@ function TaxpayerComp() {
         </p>
       </div>
 
-      <div className="m-auto max-w-[80%] flex justify-center items-center gap-4 ">
+      <div className="m-auto max-w-100 lg:max-w-[80%] flex justify-center items-center gap-4 ">
         {tabs.map((tab) => (
           <Button
             key={tab.title}
