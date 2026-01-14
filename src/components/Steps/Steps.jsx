@@ -25,7 +25,7 @@ const steps = [
 
 function Steps() {
   return (
-    <section className="my-20 ">
+    <section className="my-20">
       {/* Header */}
       <div className="text-center max-w-150 m-auto mb-16">
         <h2 className="text-[26px] lg:text-3xl font-semibold mb-3">
@@ -37,18 +37,11 @@ function Steps() {
         </p>
       </div>
 
-      {/* Visual */}
-      <div className="relative min-h-100">
+      <div className="">
         {/* Decorative SVG path (desktop only) */}
-        <img
-          src={StepsPath}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-auto z-0 hidden lg:block"
-        />
 
         {/* Steps */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-4">
           {steps.map((step, index) => (
             <StepsItem key={index} index={index} {...step} />
           ))}
@@ -57,39 +50,5 @@ function Steps() {
     </section>
   );
 }
-
-// function Steps() {
-//   return (
-//     <section className="mb-20 mt-20 p-2">
-//       <div className=" text-center mb-8">
-//         <h3 className="text-[26px] lg:text-3xl font-semibold mb-2">
-//           From confused to compliant in 3 steps.
-//         </h3>
-//         <p className="text-[14px] lg:text-base">
-//           Our intelligent system guides you through the entire tax calculation
-//           process with precision and ease
-//         </p>
-//       </div>
-
-//       <div
-//         className="grid grid-cols-3 gap-8 relative"
-//         style={{
-//           backgroundImage: `url(${bgImage})`,
-//           height: "40vh",
-//           width: "100%",
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//         }}
-//       >
-//         {steps.map((steps, index) => (
-//           <Card className="bg-transparent absolute top-8 ">
-//             <CardHeader>{`0${index + 1}`}</CardHeader>
-//             <CardTitle>{steps.profileHead}</CardTitle>
-//           </Card>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
 
 export default Steps;

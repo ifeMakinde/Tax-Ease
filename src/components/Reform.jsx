@@ -59,9 +59,13 @@ const reformCard = [
 
 function Reform() {
   return (
-    <section className="my-20 p-2">
-      <div className=" text-center max-w-150 m-auto mb-16">
-        <h3 className="text-[26px] lg:text-3xl font-semibold mb-3">
+<<<<<<< HEAD
+    <section className="my-20" id="reform">
+=======
+    <section className="my-20">
+>>>>>>> 7e61bfa41481c1b005360c5e3a09b16dd4064a00
+      <div className=" text-center m-auto mb-16">
+        <h3 className="text-[24px] lg:text-3xl font-semibold mb-3">
           The 2026 Reform is complex. Compliance shouldn't be.
         </h3>
         <p className="text-[14px] lg:text-base">
@@ -74,7 +78,7 @@ function Reform() {
         {reformCard.map((card, index) => (
           <Card
             key={index}
-            className="p-4 border-0 rounded-md"
+            className="p-4 border-0 rounded-md transition-all hover:translate-y-4 duration-800 ease-in-out hover:shadow-md"
             style={{ backgroundColor: card.color }}
           >
             <CardHeader className="">{card.icon} </CardHeader>

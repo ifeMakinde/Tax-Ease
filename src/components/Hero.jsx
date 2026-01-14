@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../assets/Group 10.png";
+import heroImage from "../assets/hero.png";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Info, MoveRight } from "lucide-react";
@@ -29,7 +29,7 @@ function Hero() {
           clarity.
         </p>
 
-        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#10B981] rounded-lg text-white cursor-pointer">
+        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#064E3B] rounded-lg text-white cursor-pointer">
           get started{" "}
           <span>
             <MoveRight size={38} />
@@ -38,8 +38,8 @@ function Hero() {
       </div>
 
       {/* hero image */}
-      <div className="flex items-center">
-        <img src={heroImage} alt="hero-image" />
+      <div className="">
+        <img src={heroImage} alt="hero-image" className="object-cover" />
       </div>
     </section>
   );
