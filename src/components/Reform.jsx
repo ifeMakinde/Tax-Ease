@@ -78,7 +78,7 @@ function Reform() {
             style={{ backgroundColor: card.color }}
           >
             <CardHeader className="">{card.icon} </CardHeader>
-            <CardTitle className="text-[24px] ">{card.header}</CardTitle>
+            <CardTitle className="text-[22px] ">{card.header}</CardTitle>
             <CardDescription>{card.paragraph}</CardDescription>
           </Card>
         ))}
