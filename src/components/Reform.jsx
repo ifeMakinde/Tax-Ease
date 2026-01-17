@@ -15,7 +15,7 @@ const reformCard = [
     icon: (
       <TriangleAlert
         strokeWidth={1}
-        size={40}
+        size={38}
         color="white"
         className="bg-[#F59E0B] p-2 rounded-md"
       />
@@ -30,7 +30,7 @@ const reformCard = [
     icon: (
       <Globe
         strokeWidth={1}
-        size={40}
+        size={38}
         color="white"
         className="bg-[#10B981] p-2 rounded-md"
       />
@@ -45,7 +45,7 @@ const reformCard = [
     icon: (
       <FileSpreadsheet
         strokeWidth={1}
-        size={40}
+        size={38}
         color="white"
         className="bg-[#3B82F6] p-2 rounded-md"
       />
@@ -70,16 +70,18 @@ function Reform() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
         {reformCard.map((card, index) => (
           <Card
             key={index}
-            className="p-4 border-0 rounded-md transition-all hover:translate-y-4 duration-800 ease-in-out hover:shadow-md"
+            className="p-4 border-0 rounded-md transition-all hover:translate-y-3 duration-800 ease-in-out hover:shadow-md"
             style={{ backgroundColor: card.color }}
           >
-            <CardHeader className="">{card.icon} </CardHeader>
-            <CardTitle className="text-[24px] ">{card.header}</CardTitle>
-            <CardDescription>{card.paragraph}</CardDescription>
+            <CardHeader>{card.icon} </CardHeader>
+            <CardTitle className="text-[18px]">{card.header}</CardTitle>
+            <CardDescription className="text-sm">
+              {card.paragraph}
+            </CardDescription>
           </Card>
         ))}
       </div>

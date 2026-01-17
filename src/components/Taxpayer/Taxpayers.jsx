@@ -27,9 +27,9 @@ function TaxpayerComp() {
   const [activeTab, setActiveTab] = useState("Individuals");
 
   return (
-    <section className="py-20 ">
-      <div className="text-center max-w-150 m-auto mb-10">
-        <h2 className="text-[26px] lg:text-3xl font-semibold mb-3">
+    <section className="py-20" id="whoItsFor">
+      <div className="text-center max-w-170 m-auto mb-10">
+        <h2 className="text-[24px] lg:text-3xl font-semibold mb-3">
           Built for every Nigerian taxpayer.
         </h2>
         <p className="text-[14px] lg:text-base  ">
@@ -38,7 +38,7 @@ function TaxpayerComp() {
         </p>
       </div>
 
-      <div className="m-auto max-w-[80%] flex justify-center items-center gap-4 ">
+      <div className="m-auto w-70 lg:max-w-[70%] px-3 lg:px-6 flex justify-center items-center gap-2 lg:gap-4 text-[12px] lg:text-[14px] ">
         {tabs.map((tab) => (
           <Button
             key={tab.title}
@@ -46,7 +46,7 @@ function TaxpayerComp() {
               activeTab === tab.title
                 ? "bg-[#064E3B]"
                 : "text-black bg-gray-100"
-            }  text-[14px] lg:text-base`}
+            } p-3 `}
             onClick={() => {
               setActiveTab(tab.title);
             }}

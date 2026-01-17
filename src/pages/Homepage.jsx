@@ -4,7 +4,9 @@ import Hero from "../components/Hero";
 import Reform from "@/components/Reform";
 import Steps from "@/components/Steps/Steps";
 import Taxpayer from "@/components/Taxpayer/Taxpayers";
-
+import Compliance from "@/components/Compliance/Compliance";
+import FAQs from "@/components/FAQ/FAQs";
+import CTA from "@/components/CTA";
 function Homepage() {
   return (
     <div>
@@ -13,6 +15,9 @@ function Homepage() {
       <Reform />
       <Steps />
       <Taxpayer />
+      <Compliance />
+      <FAQs />
+      <CTA />
     </div>
   );
 }

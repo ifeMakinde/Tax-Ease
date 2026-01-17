@@ -23,7 +23,7 @@ function Hero() {
           Your Personal Guide to Nigeria's New Tax Laws.
         </h1>
 
-        <p className="mb-3 text-[14px] lg:text-base -">
+        <p className="mb-3 text-[14px] lg:text-base ">
           Find out exactly what you owe, claim your exemptions, and get a
           step-by-step compliance checklist in under 2 minutes. No jargon, just
           clarity.
@@ -38,8 +38,12 @@ function Hero() {
       </div>
 
       {/* hero image */}
-      <div className="">
-        <img src={heroImage} alt="hero-image" className="object-cover" />
+      <div className="w-full lg:w-[50%]">
+        <img
+          src={heroImage}
+          alt="hero-image"
+          className="w-full lg:w-full object-cover"
+        />
       </div>
     </section>
   );

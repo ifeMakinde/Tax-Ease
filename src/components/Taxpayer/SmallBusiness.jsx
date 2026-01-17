@@ -11,7 +11,7 @@ const icon = (
   />
 );
 
-const freelanceFeatures = [
+const Features = [
   {
     icon,
     head: " Turnover-Based tax tiers",
@@ -47,12 +47,12 @@ function SmallBusiness() {
         </p>
 
         <ul className=" mt-4 flex flex-col justify-baseline gap-3">
-          {freelanceFeatures.map((features, i) => (
+          {Features.map((feature, i) => (
             <li key={i} className="flex items-center gap-2">
-              <span className="">{features.icon}</span>
+              <span className="">{feature.icon}</span>
               <span>
-                <h4 className="font-semibold">{features.head}</h4>
-                <p className="text-[14px] max-w-100">{features.paragraph}</p>
+                <h4 className="font-semibold">{feature.head}</h4>
+                <p className="text-[14px] max-w-100">{feature.paragraph}</p>
               </span>
             </li>
           ))}

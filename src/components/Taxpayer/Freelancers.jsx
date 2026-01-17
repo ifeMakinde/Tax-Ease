@@ -11,7 +11,7 @@ const icon = (
   />
 );
 
-const freelanceFeatures = [
+const Features = [
   {
     icon,
     head: " WHT Credit tracking",
@@ -34,7 +34,7 @@ const freelanceFeatures = [
 
 function Freelancers() {
   return (
-    <div className="py-8 px-4 lg:p-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
+    <div className="py-8 px-2 lg:p-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
       <div className="">
         <h2 className="text-[22px] lg:text-[24px] font-semibold pb-3  ">
           Freelancers & Remote Workers
@@ -47,12 +47,12 @@ function Freelancers() {
         </p>
 
         <ul className=" mt-4 flex flex-col justify-baseline gap-3">
-          {freelanceFeatures.map((features, i) => (
+          {Features.map((feature, i) => (
             <li key={i} className="flex items-center gap-2">
-              <span className="">{features.icon}</span>
+              <span className="">{feature.icon}</span>
               <span>
-                <h4 className="font-semibold">{features.head}</h4>
-                <p className="text-[14px] max-w-100">{features.paragraph}</p>
+                <h4 className="font-semibold">{feature.head}</h4>
+                <p className="text-[14px] max-w-100">{feature.paragraph}</p>
               </span>
             </li>
           ))}
