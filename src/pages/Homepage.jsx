@@ -7,8 +7,10 @@ import Taxpayer from "@/components/Taxpayer/Taxpayers";
 import Compliance from "@/components/Compliance/Compliance";
 import FAQs from "@/components/FAQ/FAQs";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 function Homepage() {
   return (
+    <>
     <div>
       <Navigation />
       <Hero />
@@ -18,7 +20,11 @@ function Homepage() {
       <Compliance />
       <FAQs />
       <CTA />
+    <Footer/>
     </div>
+
+  
+    </>
   );
 }
 
