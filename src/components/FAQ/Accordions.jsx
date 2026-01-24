@@ -43,7 +43,7 @@ function Accordions() {
             value={`item-${index + 1}`}
             className="m-auto max-w-250 pb-2"
           >
-            <AccordionTrigger className=" text-[18px] lg:text-[20px] font-medium hover:no-underline">
+            <AccordionTrigger className=" text-base lg:text-[18px] font-medium hover:no-underline">
               {faq.question}
             </AccordionTrigger>
             <AccordionContent className="text-[14px]">
@@ -52,15 +52,6 @@ function Accordions() {
           </AccordionItem>
         </Accordion>
       ))}
-
-      {/* <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion> */}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import heroImage from "../assets/hero.png";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Info, MoveRight } from "lucide-react";
+import Btn from "../Btn.jsx";
 
 const date = new Date().getFullYear();
 
@@ -29,12 +30,12 @@ function Hero() {
           clarity.
         </p>
 
-        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#064E3B] rounded-lg text-white cursor-pointer">
-          get started{" "}
+        <Btn>
+          Get Started Now
           <span>
-            <MoveRight size={38} />
+            <MoveRight size={38} />{" "}
           </span>
-        </Button>
+        </Btn>
       </div>
 
       {/* hero image */}
