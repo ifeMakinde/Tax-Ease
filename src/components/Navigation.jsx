@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../assets/Vectorized logo SVG.png";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import Btn from "../Btn.jsx";
+import { Menu } from "lucide-react";
 
 const navItems = [
   {
@@ -22,7 +24,7 @@ function Navigation() {
     <header className="flex justify-between items-center gap-4 p-4">
       {/* logo */}
       <div>
-        <img src={logo} alt="" width={100} />
+        <img src={logo} alt="" width={150} />
       </div>
 
       {/*  navigtions*/}
@@ -33,22 +35,16 @@ function Navigation() {
             className="list-none capitalize transition-all hover:scale-110 duration-600 ease-in-out cursor-pointer"
           >
             <a href={nav.href}>{nav.link}</a>
-            {/* <Link href="#reform" className="">
-              {nav}
-            </Link> */}
           </li>
         ))}
       </nav>
 
-      <div className="flex justify-between items-center gap-2 ">
-        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 font-semibold cursor-pointer bg-transparent text-black ">
-          log in
-        </Button>
-
-        <Button className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#064E3B] rounded-lg text-white cursor-pointer">
-          get started
-        </Button>
+      <div className="hidden lg:flex justify-between items-center gap-2">
+        <Btn>Get started</Btn>
       </div>
+      <button className="block lg:hidden cursor-pointer">
+        <Menu size={28} strokeWidth={1} />
+      </button>
     </header>
   );
 }
