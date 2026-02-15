@@ -10,6 +10,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useNavigate } from "react-router-dom";
 import { Login, checkRegisteredUser } from "@/lib/storage";
+import { toast } from "sonner";
 
 function LoginForm({ switchStatus }) {
   // USER
@@ -20,7 +21,7 @@ function LoginForm({ switchStatus }) {
 
   // states
   const [error, setError] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -64,11 +65,15 @@ function LoginForm({ switchStatus }) {
 
     Login(user);
     setIsLoggedIn(true);
-    alert("Login Successful");
+    toast.success("Login Successful!", {
+      position: "top-center",
+    });
     setEmail("");
     setPassword("");
     setError("");
-    navigate("/product");
+    setTimeout(()=> {
+      navigate("/dashboard");
+    }, 4000)
   }
 
   return (
@@ -103,7 +108,7 @@ function LoginForm({ switchStatus }) {
                   type="password"
                   value={password}
                   // required
-                  className="text-[18px] outline outline-black focus:border focus:border-green-600"
+                  className="text-[20px] outline outline-black focus:border focus:border-green-600"
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </Field>

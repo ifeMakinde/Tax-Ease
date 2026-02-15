@@ -11,7 +11,7 @@ function Hero() {
   return (
     <section className="flex flex-col lg:flex-row justify-between lg:justify-evenly gap-8 lg:gap-5 p-2 mt-12 mb-12 ">
       <div className="m-auto w-full lg:max-w-[50%] tracking-tight text-center lg:text-left ">
-        <div className="flex justify-center items-center gap-1 mb-4 bg-[#ECFDF5] max-w-30% lg:w-10/25 rounded-xl transition-all hover:translate-y-1 ">
+        <div className="flex justify-center items-center gap-1 mb-4 bg-[#ECFDF5] mx-auto lg:mx-0 max-w-60 lg:w-10/25 rounded-xl transition-all hover:translate-y-1 ">
           <span>
             <Info strokeWidth={1} color="#10B981" />
           </span>
@@ -24,7 +24,7 @@ function Hero() {
           Your Personal Guide to Nigeria's New Tax Laws.
         </h1>
 
-        <p className="mb-3 text-[14px] lg:text-base ">
+        <p className="mb-3 text-[14px] lg:text-base lg:max-w-145">
           Find out exactly what you owe, claim your exemptions, and get a
           step-by-step compliance checklist in under 2 minutes. No jargon, just
           clarity.
@@ -33,7 +33,7 @@ function Hero() {
         <Btn>
           Get Started Now
           <span>
-            <MoveRight size={38} />{" "}
+            <MoveRight size={38} strokeWidth={1} />
           </span>
         </Btn>
       </div>

@@ -12,7 +12,7 @@ function Btn({ children }) {
 
   return (
     <Button
-      className="capitalize text-[14px] lg:text-base px-4 py-4 lg:px-6 lg:py-6 bg-[#064E3B] rounded-lg text-white cursor-pointer"
+      className={`capitalize text-[14px] lg:text-base p-5 lg:p-6 bg-[#064E3B] rounded-lg text-white cursor-pointer `}
       onClick={handleNavigate}
     >
       {children}

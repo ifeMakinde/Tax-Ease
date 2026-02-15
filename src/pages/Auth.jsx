@@ -2,7 +2,6 @@ import React from "react";
 import Login from "@/components/Auth/Login";
 import SignUp from "@/components/Auth/SignUp";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 function Auth() {
   const [status, setStatus] = useState("login");

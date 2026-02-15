@@ -21,9 +21,9 @@ export function checkRegisteredUser(email) {
 
 // fucntion is called in the loginform coponent to store user data in session storage. user is an argument object coming from the handle submit func
 export function Login(user) {
-  sessionStorage.setItem(USER_KEY, JSON.stringify(user));
+  localStorage.setItem(USER_KEY, JSON.stringify(user));
 }
 
 export function Logout() {
-  sessionStorage.removeItem(USER_KEY);
+  localStorage.removeItem(USER_KEY);
 }
